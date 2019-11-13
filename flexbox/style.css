@@ -1,0 +1,27 @@
+/*classes especificas para o nosso site*/
+
+header.topo-site {
+    padding: 20px 0;
+}
+
+header.topo-site ul li {
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.slider {
+    min-height: 600px;
+}
+
+.logo {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slider p {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    font-size: 23px;
+    color: white;
+}
