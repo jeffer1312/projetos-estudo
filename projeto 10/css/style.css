@@ -5,6 +5,12 @@
         font-family: "Roboto";
     }
     
+    .container {
+        max-width: 1280px;
+        padding: 0 2%;
+        margin: 0 auto;
+    }
+    
     input[type=submit],
     input[type=text],
     input[type=email],
@@ -18,17 +24,6 @@
         background: white;
     }
     
-    html,
-    body {
-        height: 100%;
-    }
-    
-    .container {
-        padding: 0 2%;
-        width: 1280px;
-        margin: 0 auto;
-    }
-    
     .clear {
         clear: both;
     }
@@ -38,7 +33,7 @@
         background-size: cover;
         padding: 30px 0;
         background-position: center;
-        min-height: 600px;
+        min-height: 450px;
     }
     
     .logo {
@@ -51,6 +46,8 @@
         height: 20px;
     }
     /*menus*/
+    /*codigo professor*/
+    /**/
     
     nav.menu-desktop {
         float: right;
@@ -62,39 +59,37 @@
     
     nav.menu-desktop li {
         display: inline-block;
-        margin: 30px 15px;
+        margin: 0px 15px;
     }
     
     nav.menu-desktop a {
-        font-size: 20px;
-        font-weight: lighter;
         color: white;
         text-decoration: none;
     }
     
-    nav.menu-desktop li.btn-nav {
+    nav li.btn-nav {
         border: 1px solid white;
         border-radius: 20px;
         padding: 3px 8px;
     }
     
-    .menu-mobile {
+    nav.menu-mobile {
         display: none;
         float: right;
     }
     
-    nav.mobile ul {
+    nav.menu-mobile ul {
         position: absolute;
         left: 0;
         width: 100%;
         padding: 70px 0 30px 0;
-        top: 0px;
+        top: 30px;
         background: #31475e;
         display: none;
         text-align: center;
     }
     
-    .menu-mobile h3 {
+    nav.menu-mobile h3 {
         position: relative;
         z-index: 2;
         color: white;
@@ -102,16 +97,17 @@
         font-size: 26px;
     }
     
-    .menu-mobile li {
+    nav.menu-mobile li {
         padding: 10px 0;
+        display: inline-block;
     }
     
-    .menu-mobile li.btn-nav {
+    nav.menu-mobile li.btn-nav {
         padding: 4px 10px;
         display: inline-block;
     }
     
-    .menu-mobile a {
+    nav.menu-mobile a {
         display: block;
         color: white;
         text-decoration: none;
@@ -164,11 +160,11 @@
     }
     /*media screen*/
     
-    @media screen and (max-width: 1024px) {
-        .menu-desktop {
+    @media (max-width: 1024px) {
+        nav.menu-desktop {
             display: none;
         }
-        .menu-mobile {
+        nav.menu-mobile {
             display: block;
         }
     }
