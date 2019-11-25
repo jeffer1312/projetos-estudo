@@ -1,0 +1,167 @@
+    /*resets da pagina*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+    }
+    
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        background: #FAF9FC;
+    }
+    /**/
+    /*sidebar*/
+    /*flex*/
+    
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    
+    .w15 {
+        width: 300px;
+        height: 100%;
+    }
+    
+    .w30 {
+        width: 30%;
+    }
+    
+    .w85 {
+        width: calc(100% - 300px);
+        height: 100%;
+    }
+    
+    .w84 {
+        width: 85%;
+    }
+    
+    .w10 {
+        width: 15;
+    }
+    
+    .w50 {
+        width: 50%;
+    }
+    
+    .order1 {
+        order: 1;
+    }
+    
+    .order2 {
+        order: 2;
+    }
+    
+    .order3 {
+        order: 3;
+    }
+    
+    .order4 {
+        order: 4;
+    }
+    /*flex*/
+    
+    .sidebar {
+        background: #2D3035;
+        height: 100%;
+    }
+    
+    .topo {
+        background: #26282D;
+        text-align: center;
+        padding: 20px 10px;
+        color: white;
+    }
+    
+    .menu {
+        padding: 30px;
+    }
+    
+    .menu li {
+        font-size: 18px;
+        color: #717171;
+        margin-bottom: 20px;
+    }
+    
+    .menu ul li a {
+        font-size: 18px;
+        color: #717171;
+        text-decoration: none;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+    }
+    
+    .menu li:hover i {
+        transition: 0.6s;
+        color: #6d3bb8;
+    }
+    
+    .menu li:hover a {
+        transition: 0.6s;
+        color: white;
+    }
+    /*fim da sidebar*/
+    
+    .main-content {
+        height: 100%;
+    }
+    
+    header {
+        background: white;
+        padding: 20px 15px;
+        border-bottom: 2px solid #ccc;
+    }
+    
+    .icone-pesquisa i {
+        position: relative;
+        top: 5px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .icone-pesquisa {
+        background: #d6d6d6;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color: white;
+        display: inline-flex;
+        vertical-align: middle;
+    }
+    
+    .pesquisa-campo form {
+        display: inline-flex;
+    }
+    
+    .pesquisa-campo input[type=text] {
+        padding-left: 10px;
+        font-size: 16px;
+        width: 200px;
+        height: 30px;
+        border: 1px solid #ccc;
+    }
+    
+    .pesquisa-campo input[type=text]:focus {
+        outline: 0;
+    }
+    
+    .icone-alerta {
+        text-align: right;
+        padding-right: 25px;
+        color: black;
+    }
